@@ -14,4 +14,19 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "vite": "^4.1.4"
   }
+  ,"repository": {
+    "type": "git",
+    "url": "git+https://github.com/kritib2502/calculator-app.git"
+  },
+  "keywords": [],
+  "author": {
+    "name": "kritib2502",
+    "url": "https://github.com/kritib2502"
+  },
+  "contributor": {
+    "name": "sara-rahmani",
+    "url": "https://github.com/sara-rahmani"
+
+  },
+  "license": "ISC"
 }
