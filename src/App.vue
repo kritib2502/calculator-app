@@ -6,6 +6,7 @@ import Calculator from './components/Calculator.vue'
 <template>
 
     <div class="wrapper">
+      <h1>Calculator Vue.js</h1>
       <Calculator />
     </div>
 

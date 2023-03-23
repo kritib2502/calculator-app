@@ -1,5 +1,19 @@
 @import './base.css';
 
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  margin: 1rem;
+}
+
 #app {
   max-width: 1280px;
   margin: 0 auto;
@@ -29,7 +43,7 @@ a,
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     padding: 0 2rem;
   }
 }
