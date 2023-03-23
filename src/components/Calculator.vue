@@ -90,7 +90,7 @@ else{
       this.clickedOperator = false
     },
     clearDisplay () {
-      this.current.slice(0,-1);
+      this.current= this.current.slice(0,-1);
      
     },
     appendSymbol (number) {
