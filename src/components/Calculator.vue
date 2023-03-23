@@ -9,7 +9,7 @@
 <div class="keyboard">
 <div class="row">
   <button @click ="clearAllDisplay()">AC</button>
-  <button @click ="clearDispay()" >C</button>
+  <button @click ="clearDisplay()" >C</button>
   <button v-on:click ="memoryClear()" >MC</button>
   <button  v-on:click ="memorySave()">MS</button>
   <button  v-on:click ="handleOperator('×')">×</button>
