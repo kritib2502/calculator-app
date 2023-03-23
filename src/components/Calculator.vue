@@ -117,22 +117,26 @@ else{
     convertPercent () {
       this.current = `${parseFloat(this.current) / 100}`
     },
-    handleOperator (newOperator) {
-      const numberValue = parseFloat(this.current)
-      if (this.operator && this.clickedOperator) {
-        this.operator = newOperator
-      }
-      if (this.previous == null) {
-        this.previous = numberValue
-      } else if (this.operator) {
-        const result = this.calculate(this.previous, numberValue, this.operator)
-        this.current = String(result)
-        this.previous = result
-      }
-      this.clickedOperator = true
-      this.operator = newOperator
-    },
 
+    handleOperator (newOperator) {
+  const numberValue = parseFloat(this.current)
+  if (this.operator && this.clickedOperator) {
+    this.operator = newOperator
+  }
+  if (this.previous == null) {
+    this.previous = numberValue
+  } else if (this.operator) {
+    const result = this.calculate(this.previous, numberValue, this.operator)
+    this.current = String(result)
+    this.previous = result
+  }
+  this.clickedOperator = true
+  if (newOperator === '=') {
+    this.clickedOperator = false
+    this.previous = null
+  }
+  this.operator = newOperator
+},
     calculate (first, second, operator) {
       switch (operator) {
         case '+':
